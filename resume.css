@@ -1,0 +1,101 @@
+/* resume.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  color: #444;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul.skills {
+  columns: 2;
+  list-style: square;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Two-column layout for Skills and Certifications */
+.skills-certifications {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.skills-certifications .left,
+.skills-certifications .right {
+  flex: 1;
+}
+
+.skills-certifications h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.skills-certifications ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .skills-certifications {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  ul.skills {
+    columns: 1;
+  }
+}
+
